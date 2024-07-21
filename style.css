@@ -1,0 +1,252 @@
+:root {
+  line-height: 1.5;
+  color-scheme: light dark;
+  color: #0b0504;
+  background-color: #fdfafa;
+  --primary: #cf413c;
+  --secondary: #ea928f;
+  --accent: #ea615c;
+  --text: #0b0504;
+  --background: #fdfafa;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+body {
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+#app {
+  margin: 0 auto;
+  padding: 1rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "DM Sans", sans-serif;
+  gap: 2rem;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  align-items: center;
+}
+.photo-frame {
+  overflow: hidden;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+.photo-image {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+}
+#name {
+  font-size: 2.5em;
+  @media only screen and (max-width: 640px) {
+    font-size: 1.75rem;
+  }
+}
+#about {
+  max-width: 900px;
+  font-size: 1.35rem;
+  font-weight: 400;
+  text-wrap: balance;
+  text-align: center;
+  @media only screen and (max-width: 640px) {
+    font-size: 1.15rem;
+  }
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: 5rem;
+  row-gap: 0.5rem;
+  @media only screen and (max-width: 640px) {
+    /* grid-template-columns: 1fr; */
+    margin-left: 0;
+  }
+}
+.title {
+  background: -webkit-linear-gradient(60deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @media only screen and (max-width: 720px) {
+    font-size: 1.25rem;
+  }
+  @media only screen and (max-width: 640px) {
+    font-size: 1.15rem;
+  }
+  @media only screen and (max-width: 480px) {
+    font-size: 1rem;
+  }
+}
+.value {
+  font-size: 1.15rem;
+  font-weight: 500;
+  @media only screen and (max-width: 720px) {
+    font-size: 1rem;
+  }
+  @media only screen and (max-width: 640px) {
+    font-size: 0.9rem;
+  }
+  @media only screen and (max-width: 480px) {
+    font-size: 0.8rem;
+  }
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  place-items: center;
+  row-gap: 0.5rem;
+  column-gap: 3rem;
+  @media only screen and (max-width: 640px) {
+    justify-items: stretch;
+  }
+}
+.skill-name {
+  @media only screen and (max-width: 900px) {
+    font-size: 0.8rem;
+  }
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: var(--text);
+  @media only screen and (max-width: 640px) {
+    font-size: 1.75rem;
+  }
+}
+.skill-container {
+  width: 100%;
+  height: 35px;
+  background-color: #ddd;
+}
+.skills {
+  text-align: right;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 2px;
+  color: var(--background);
+}
+.web {
+  width: 75%;
+  background-color: var(--primary);
+}
+.hardware {
+  width: 60%;
+  background-color: var(--primary);
+}
+.problem {
+  width: 85%;
+  background-color: var(--primary);
+}
+.troubleshooting {
+  width: 90%;
+  background-color: var(--primary);
+}
+.research {
+  width: 90%;
+  background-color: var(--primary);
+}
+.player {
+  width: 100%;
+  background-color: var(--primary);
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  justify-items: center;
+  row-gap: 3rem;
+  column-gap: 2rem;
+  @media only screen and (max-width: 1024px) {
+    grid-template-columns: 1fr;
+  }
+}
+.project-frame {
+  width: 600px;
+  height: 300px;
+  margin-right: auto;
+  border-radius: 10px;
+  @media only screen and (max-width: 640px) {
+    width: 450px;
+    height: 250px;
+  }
+  @media only screen and (max-width: 480px) {
+    width: 350px;
+    height: 250px;
+  }
+}
+.project-image {
+  width: 600px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  @media only screen and (max-width: 640px) {
+    width: 450px;
+    height: 250px;
+  }
+  @media only screen and (max-width: 480px) {
+    width: 350px;
+    height: 250px;
+  }
+}
+.portfolio-info {
+  display: flex;
+  flex-direction: column;
+  @media only screen and (max-width: 1024px) {
+    align-items: center;
+  }
+}
+.project-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  background: -webkit-linear-gradient(60deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.date {
+  font-size: 1.25rem;
+  font-weight: bold;
+  @media only screen and (max-width: 900px) {
+    font-size: 1rem;
+  }
+}
+.role {
+  font-size: 1.5rem;
+  color: var(--primary);
+  @media only screen and (max-width: 900px) {
+    font-size: 1.25rem;
+  }
+}
+.place {
+  font-size: 1.5rem;
+  @media only screen and (max-width: 900px) {
+    font-size: 1.25rem;
+  }
+}
